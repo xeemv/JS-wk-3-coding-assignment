@@ -4,12 +4,12 @@ Coding Steps required to complete this first coding assignment
 
 
 1.	Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
-    a.	Programmatically subtract the value of the first element in the array from the value in the last element of the array (do not use numbers to reference the last element, find it programmatically, ages[7] – ages[0] is not allowed). Print the result to the console.
-    b.	Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
-    c.	Use a loop to iterate through the array and calculate the average age. Print the result to the console.
+   * a.	Programmatically subtract the value of the first element in the array from the value in the last element of the array (do not use numbers to reference the last element, find it programmatically, ages[7] – ages[0] is not allowed). Print the result to the console.
+   * b.	Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
+   * c.	Use a loop to iterate through the array and calculate the average age. Print the result to the console.
 2.	Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
-    a.	Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
-    b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
+   * a.	Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
+    * b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
 3.	How do you access the last element of any array?
 4.	How do you access the first element of any array?
 5.	Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
