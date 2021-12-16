@@ -44,6 +44,35 @@ function average(array){
 console.log(average([3, 9, 23, 64, 2, 8, 28, 93]))
 // my code worked and it printed to console.log with a result of 28.75
 // to be on the safe side, I also used my phone's calculator to get the average
+//
+//
+
+
+// 2.	Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
+// a.	Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
+// b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
+
+// this is the array for question 2
+var names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
+
+// 2. a === I will use a for loop to iterate through the array and calculate the average number of letter per name
+function average(array){
+    var sum = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
