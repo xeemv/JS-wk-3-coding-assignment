@@ -113,13 +113,36 @@ function last(array){
     return anArray;
 };
 console.log(last(ages));
+//
 // test 2 completed
 // code printed 54 to the console.log
 //
 
 
 // 4.	How do you access the first element of any array?
+// this is the opposite of question 3. I will switch [array.length -] to array[0]
 
+var ages = [3, 9, 23, 64, 2, 8, 28, 93];
+
+function first(array){
+    let anArray = (array[0])
+    return anArray;
+};
+console.log(first(ages));
+// this printed 3 to the console.log which is correct
+
+// will do one more test
+// test 2, I switched index 0 and 2 around
+var ages = [23, 9, 3, 64, 2, 8, 28, 93];
+
+function first(array){
+    let anArray = (array[0])
+    return anArray;
+};
+console.log(first(ages));
+// this printed 23 to the console which is correct
+//
+//
 
 
 
