@@ -66,8 +66,9 @@ console.log(average(ages));
 
 
 // this is the array for question 2"
-var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
+
 // 2. a === I will use a for loop to iterate through the array and calculate the average number of letter per name
+var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
 // function averageNames(arr){
 var letters = 0
     // var sum = 0;
@@ -77,9 +78,26 @@ var letters = 0
     // } return sum / names.length;
 }
 console.log(letters/names.length);
-//
+
 // ask Jolene about this code and the one in my onenote
 
+// Will continue to work on code line 84 - 100 another time
+// var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
+
+//     var chars = names.split[""]; 
+//     // per my research, it would be best to convert these strings into characters in the names
+//     // to work w/ each character individually by creating this variable chars
+//      var lettersCount = []; 
+//     // this is to count keep count of the letters
+//     // this is an associative array
+// for (let i = 0; i < chars.length; i++) {
+//     if (type of (lettersCount[chars[i]] !== undefined))
+//     lettersCount[chars[i]] = 0;
+//     lettersCount[chars[i]]++;
+//     }
+//     for (var i in lettersCount) {
+//     } console.log(lettersCount[i]);
+//     // console.log(averageNames(names));
 
 // 2. b.
 var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
@@ -145,6 +163,22 @@ console.log(first(ages));
 //
 
 
+//5.	Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
+// For example:
+
+// namesArray = ["Kelly", "Sam", "Kate"] //given this array
+// nameLengths = [5, 3, 4] //create this new array
+
+var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
+
+var letters = 0
+    // var sum = 0;
+    for (let i = 0; i < names.length; i++) {
+        letters = letters + names[i].length;
+    // sum += arr[i];
+    // } return sum / names.length;
+}
+console.log(letters/names.length);
 
 
 
