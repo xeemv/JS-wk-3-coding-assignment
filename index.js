@@ -15,6 +15,7 @@
  console.log(firstLast([3, 9, 23, 64, 2, 8, 28, 93]))
 // when testing this, it printed 90 on the console
 
+//
 // section 1.b.
 var ages = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54]; 
 // added 4 new values to the original list: 100, 25, 73, 54
@@ -28,10 +29,19 @@ console.log(firstLast([3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54]))
 // there for this is a dynamic == basically checking to see if this will work when more values are added to the array
 
 
+//
+// section 1.c.
+// I will use the for loop to loop through the code 1 time and calculate the average age
+// I will use the original age array given
+var ages = [3, 9, 23, 64, 2, 8, 28, 93];
 
-
-
-
-
+function average(array){
+    var sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }  return sum / array.length;
+} 
+console.log(average([3, 9, 23, 64, 2, 8, 28, 93]))
+// code worked and printed to console.log 28.75
 
 // 9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
