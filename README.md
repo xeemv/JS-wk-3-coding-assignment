@@ -1,4 +1,4 @@
-# JS-wk-3-coding-assignment
+# JS-wk-3-coding-assignment at Promineo-Tech
 
 Coding Steps required to complete this first coding assignment
 
