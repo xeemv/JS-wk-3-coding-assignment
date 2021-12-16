@@ -42,6 +42,10 @@ function average(array){
     }  return sum / array.length;
 } 
 console.log(average([3, 9, 23, 64, 2, 8, 28, 93]))
-// code worked and printed to console.log 28.75
+// my code worked and it printed to console.log with a result of 28.75
+// to be on the safe side, I also used my phone's calculator to get the average
+
+
+
 
 // 9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
