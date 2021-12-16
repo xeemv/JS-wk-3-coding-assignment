@@ -38,11 +38,22 @@ function average(array){
     sum += array[i];
     } return sum / array.length;
 } 
-console.log(average([3, 9, 23, 64, 2, 8, 28, 93]))
+console.log(average(ages));
 // my code worked and it printed to console.log with a result of 28.75
 // to be on the safe side, I also used my phone's calculator to get the average
 //
 //
+// test number 2 for section 1.c using the additional birthday variables
+var ages = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54];
+function average(array){
+    var sum = 0;
+    for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+    } return sum / array.length;
+} 
+console.log(average(ages));
+// test answer should be equal 40.1667
+// console.log printed 40.1667, therefore, code line works
 
 
 
@@ -65,6 +76,7 @@ var letters = 0
 }
 console.log(letters/names.length);
 //
+// ask Jolene about this code and the one in my onenote
 
 
 // 2. b.
