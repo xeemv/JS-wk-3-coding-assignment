@@ -26,6 +26,8 @@ function firstLast(array){
 console.log(firstLast([3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54]))
 // when testing this, it printed 51 on the console.
 // there for this is a dynamic == basically checking to see if this will work when more values are added to the array
+console.log(firstLast(ages)); // I could also use this consol.log instead of line 26
+// test printed the same results
 
 //
 // section 1.c.
@@ -85,10 +87,44 @@ for (let i = 0; i < names.length; i++) {
     var allNames = names.join(' '); 
     // per reseach array.join function that would create a string concatenating all the element (names) into a new array.
     // in the empty parentheses, I need to add a space in order to separate the names based on directions
-    // tested this in console.log and names printed as "Sam Tommy Tim Sally Buck Bob"correctly
 }
     console.log(allNames);
 //
+// tested this in console.log and names printed as "Sam Tommy Tim Sally Buck Bob"correctly
+
+
+// 3.	How do you access the last element of any array?
+// To access the last element of an array, the individual will need to use the array method call [array.length - 1].
+// using question 1's age variables 
+var ages = [3, 9, 23, 64, 2, 8, 28, 93];
+
+function last(array){
+    let anArray = (array[array.length - 1])
+    return anArray;
+};
+console.log(last(ages));
+// tested this and it printed 93 on the console.log
+
+// test 2
+var ages = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54];
+
+function last(array){
+    let anArray = (array[array.length - 1])
+    return anArray;
+};
+console.log(last(ages));
+// test 2 completed
+// code printed 54 to the console.log
+//
+
+
+// 4.	How do you access the first element of any array?
+
+
+
+
+
+
 
 
 
