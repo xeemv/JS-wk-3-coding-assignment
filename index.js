@@ -13,6 +13,19 @@
     return anArray;
  };
  console.log(firstLast([3, 9, 23, 64, 2, 8, 28, 93]))
+// when testing this, it printed 90 on the console
+
+// section 1.b.
+var ages = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54]; 
+// added 4 new values to the original list: 100, 25, 73, 54
+
+function firstLast(array){
+    let anArray = (array[array.length - 1] - array[0])
+    return anArray;
+};
+console.log(firstLast([3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54]))
+// when testing this, it printed 51 on the console.
+// there for this is a dynamic == basically checking to see if this will work when more values are added to the array
 
 
 
