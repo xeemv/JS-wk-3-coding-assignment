@@ -169,8 +169,8 @@ console.log(first(ages));
 // namesArray = ["Kelly", "Sam", "Kate"] //given this array
 // nameLengths = [5, 3, 4] //create this new array
 
+// code line 174 - 182 is here as a reference to question 2.a
 var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
-
 var letters = 0
     // var sum = 0;
     for (let i = 0; i < names.length; i++) {
@@ -179,6 +179,14 @@ var letters = 0
     // } return sum / names.length;
 }
 console.log(letters/names.length);
+
+function namesLength () {
+    for (let i = 0; i < names.length; i++) {
+        nameLengths = new[names.length];
+            nameLengths[i] = names[i].length();
+} 
+}
+console.log(nameLengths);
 
 
 
