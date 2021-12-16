@@ -76,7 +76,7 @@ for (let i = 0; i < names.length; i++) {
     // tested this in console.log and names printed as "Sam Tommy Tim Sally Buck Bob"correctly
 }
     console.log(allNames);
-
+//
 
 
 
