@@ -34,26 +34,25 @@ console.log(firstLast(ages));
 // section 1.c.
     // I will use the for loop to loop through the code 1 time and calculate the average age
     // I will use the original age array given
-var ages = [3, 9, 23, 64, 2, 8, 28, 93];
-function average(array){
-    var sum = 0;
-    for (let i = 0; i < array.length; i++) {
-    sum += array[i];
-    } return sum / array.length;
-} 
-console.log(average(ages));
+var ages1 = [3, 9, 23, 64, 2, 8, 28, 93];
+function averageA(array1){
+    var sum6 = 0;
+    for (let i = 0; i < array1.length; i++) {
+    sum6 += array1[i];
+    } return (sum6 / array1.length);
+} console.log(averageA(ages1));
     // my code worked and it printed to console.log with a result of 28.75
     // to be on the safe side, I also used my phone's calculator to get the average
 
     // test number 2 for section 1.c using the additional birthday variables
-var ages = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54];
-function average(array){
-    var sum = 0;
+var ages2 = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54];
+function average7(array){
+    var sum9 = 0;
     for (let i = 0; i < array.length; i++) {
-    sum += array[i];
-    } return sum / array.length;
+    sum9 += array[i];
+    } return (sum9 / array.length);
 } 
-console.log(average(ages));
+console.log(average7(ages2));
     // test answer should be equal 40.1667
     // console.log printed 40.1667, therefore, code line works
 
@@ -168,15 +167,34 @@ console.log(first(ages));
 // nameLengths = [5, 3, 4] //create this new array
 
         // code line 170 - 178 is here as a reference to question 2.a
-        // var namesArry = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
+        // string [] namesArry = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
+        
+        // int [] nameLengths= Arrays.stream(namesArry)
+        //     .mapToInt(String::nameLengths)
+        //     .toArray();
+        //     .println(Arrays.toString(nameLengths));
         // var letters = 0
-        // var nameLengths;
+        // var nameLengths= Arrays.stream(namesArry)
 
+        //     .mapToInt(namesArry::nameLengths)
+        //     .toArray();
+        // } console.log(Arrays.namesArry(nameLengths));   
+    
+        var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
+
+        // int[] nameLengths = new int[names.length];
+		// for (int i = 0; i < names.length; i++) {
+		// 	nameLengths[i] = names[i].length(); 
+		// }
+
+
+        // function newNamesArray (namesLengths, namesArray) {
+        //     var sumNames = 0;
         // for (let i = 0; i < namesArry.length; i++) {
-        //     namesLengths[i] = namesArry[i].length();
+        //      sumNames = sumNames + namesLengths[i];
         // } 
-        // console.log(nameLengths[namesArry]);
-
+        // console.log(newNamesArray[nameLengths,namesArry]);
+        // }
 
         // failed attempts
         // var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
@@ -299,10 +317,13 @@ function returnSum (num) {
     var sum = 0;
     for (let i = 0; i < num.length; i++) {
         sum += num[i];
-        if (num > 100);
-    return "true";
+        console.log("this is my current total " + sum);
+    if (sum > 100); {
+        return "true";
+        }
     }
  } console.log(returnSum(num));
+
     // code passed and printed as true in console.log
     // calculated on cell phone calculator and the total sum is 230 which is greater than 100
     
@@ -389,3 +410,46 @@ var ar2 = [23, 42, 15, 3, 33, 2]; // variables from my test for question 10
     // } console.log(sum);
     // total sum is 11, which this is correct
     // commenting out as it is not part of the question. Just here for my reference.
+
+
+
+
+
+
+
+
+
+
+
+//     12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+
+var itsHotOutside = "True";
+var moneyInPocket = "5";
+
+function willBuyDrink (itsHotOutside, moneyInPocket) {
+    if(itsHotOutside && moneyInPocket > 10.50) {
+    return "true";
+    } else //if (itsHotOutside && moneyInPocket < 10.50) <---- didn't need to include this but for trial and error, I started with this line to see how my code work
+    {
+    return "false";
+    }
+} console.log(willBuyDrink(itsHotOutside, moneyInPocket));
+// code works and correct answer is false
+// will test w/ a new number to see if code works
+
+//test code below:
+var itsHotOutside1 = "True";
+var moneyInPocket1 = "30";
+
+function willBuyDrink1 (itsHotOutside1, moneyInPocket1) {
+    if(itsHotOutside1 && moneyInPocket1 > 10.50) {
+    return "true";
+    } else //if (itsHotOutside && moneyInPocket < 10.50) <---- didn't need to include this but for trial and error, I started with this line to see how my code work
+    {
+    return "false";
+    }
+} console.log(willBuyDrink1(itsHotOutside1, moneyInPocket1));
+// code works and printed true since moneyInPocket is 30 which is more than 10.50
+
+
+// 13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
