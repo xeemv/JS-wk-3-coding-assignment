@@ -274,10 +274,47 @@ function fullN (firstName, lastName) {
     // code does work, but I need to figure out how to print w/ a space between the first and last name
     // currently printing SallyTea as one word 
     // console.log(fullN(firstName, "", lastName)); --> attempted this on my console.log however, lastName ends up dropping off  
-    // console.log(fullN(firstName "", lastName)); --> attempted this too, error popped up
+    // console.log(fullN(firstName " ", lastName)); --> attempted this too, error popped up
     // also reference function video from this week
     // code works, currently printing Sally Tea
     // attempted code with Jane Tea (did not save it) and the code works
     
 
 // 9.   Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
+
+    // reference only for me from question 1.c.
+    // var ages = [3, 9, 23, 64, 2, 8, 28, 93];
+    // function average(array){
+    //     var sum = 0;
+    //     for (let i = 0; i < array.length; i++) {
+    //     sum += array[i];
+    //     } return sum / array.length;
+    // } 
+    // console.log(average(ages));
+
+var num = [23, 9, 3, 64, 2, 8, 28, 93];
+    // using array of ages from question 1
+
+function returnSum (num) {
+    var sum = 0;
+    for (let i = 0; i < num.length; i++) {
+        sum += num[i];
+        if (num > 100);
+    return "true";
+    }
+ } console.log(returnSum(num));
+    // code passed and printed as true in console.log
+    // calculated on cell phone calculator and the total sum is 230 which is greater than 100
+    
+
+
+    // used code line 312 - 317, to check a sum
+    // to check the sum
+    // var num1 = [8, 3];
+    // var sum = 0;
+    //     for (let i = 0; i < num1.length; i++) {
+    //         sum += num1[i];
+    // } console.log(sum);
+    // total sum is 11, which this is correct
+    // commenting out as it is not part of the question. Just here for my reference.
+
