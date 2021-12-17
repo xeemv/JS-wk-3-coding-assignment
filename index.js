@@ -321,7 +321,7 @@ function returnSum (num) {
 
 // 10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
 
-var arr2 = [23, 9, 3, 64, 2, 8, 28, 93]; //[10, 2, 3, 4, 5, 6, 7, 8, 9]; 
+var arr2 = [23, 9, 3, 64, 2, 8, 28, 93];  
     // using array of ages from question 1
 var num3 = (arr2.length);
 
@@ -331,9 +331,26 @@ function average(arr2, num3) {
             sum += arr2[i]; // sum is incremented by i here and needs the arr2 not the length of the arr2 via num3
     } return (sum / num3); // here I'm dividing the sum (sum += arr2) by the num3 which is the length??
 } console.log(average(arr2, num3));
-
     // per research, I should use the average code I have and set it up from above to help as this is similar and I would not need to recreate a new code aka cause more errors for myself
     // need two variable
     // return is NaN so I need to fix this
         //sum += num3[i]; ==> this was the reason why my code was returning as NaN
         // I think I ended up trying to have sum incremented by num3 which is the length of my array and that was why it was giving me an error??? If I'm understanding this correctly.
+    // tested the code and console.log printed 28.75, arr2 is equal to 230 / 8 is 28.75
+
+    // test 2 starting at line 342
+    var arr3 = [23, 42, 15, 3, 33, 2]; // sum of these numbers should be 118
+    var num4 = (arr3.length);
+
+    function average(arr3, num4) {
+    var sum = 0;
+        for (let i = 0; i < num4; i++) {
+            sum += arr3[i];
+        } return (sum / num4);
+    } console.log(average(arr3, num4));
+    // test printed 19.668 to the console.log
+    // 118/6 is 19.667
+    // code is dynamic
+
+
+// 11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
