@@ -354,3 +354,38 @@ function average(arr2, num3) {
 
 
 // 11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+
+var ar1 = [23, 9, 3, 64, 2, 8, 28, 93]; // variables from question 1
+var ar2 = [23, 42, 15, 3, 33, 2]; // variables from my test for question 10
+
+//function aveGreater(ar1, ar2) {
+// using code from question 9 w/ these two arrays
+//function returnAver (ar1, ar2) {
+        
+        
+        var sum1 = 0; // to find average of ar1
+            for (let i = 0; i < ar1.length; i++) {
+            sum1 += ar1[i];
+            (sum1 / ar1);
+        } console.log(sum1);
+        // checking the sum for ar1
+        
+        
+        var sum2 = 0; // to find average of ar1
+            for (let i = 0; i < ar2.length; i++) {
+            sum2 += ar2[i];
+        } console.log(sum2);
+        // // checking the sum for ar2
+    
+//} console.log(aveGreater(ar1, ar2));
+
+
+// used code line 312 - 317, to check the sum of an array
+    // to check the sum
+    // var num1 = [8, 3];
+    // var sum = 0;
+    //     for (let i = 0; i < num1.length; i++) {
+    //         sum += num1[i];
+    // } console.log(sum);
+    // total sum is 11, which this is correct
+    // commenting out as it is not part of the question. Just here for my reference.
