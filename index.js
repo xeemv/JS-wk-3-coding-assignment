@@ -256,8 +256,28 @@ console.log(repeat(word, n));
         // console.log(join(word, n));
         //console.log(word.join(''));
     // tested this code by switching the var n to different numbers
-    // code works and printed as instructed in the directions  
+    // code works and printed as instructed in the directions
 
+    
+// 8.	Write a function that takes two parameters, firstName and lastName, and returns a full name (the full name should be the first and the last name separated by a space).
 
+var firstName = ('Sally');
+var lastName = ('Tea');
+
+function fullN (firstName, lastName) {
+    return (firstName + " " + lastName);
+    // return firstName + " " + lastName; --> attempted this, no go as it still prints SallyTea
+    // found my solution => must not forget the parentheses in order to create the space between firstName and lastName
+}
+    fullN ();
+    console.log(fullN(firstName, lastName));
+    // code does work, but I need to figure out how to print w/ a space between the first and last name
+    // currently printing SallyTea as one word 
+    // console.log(fullN(firstName, "", lastName)); --> attempted this on my console.log however, lastName ends up dropping off  
+    // console.log(fullN(firstName "", lastName)); --> attempted this too, error popped up
+    // also reference function video from this week
+    // code works, currently printing Sally Tea
+    // attempted code with Jane Tea (did not save it) and the code works
+    
 
 // 9.   Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
