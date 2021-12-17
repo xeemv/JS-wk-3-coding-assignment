@@ -378,46 +378,82 @@ function average(arr2, num3) {
 
 var ar1 = [23, 9, 3, 64, 2, 8, 28, 93]; // variables from question 1
 var ar2 = [23, 42, 15, 3, 33, 2]; // variables from my test for question 10
-
-//function aveGreater(ar1, ar2) {
-// using code from question 9 w/ these two arrays
-//function returnAver (ar1, ar2) {
-        
-        
         var sum1 = 0; // to find average of ar1
             for (let i = 0; i < ar1.length; i++) {
             sum1 += ar1[i];
-            (sum1 / ar1);
-        } console.log(sum1);
+            (sum1 / ar1); } //<---- need to place the curly bracket here when I comment out the console.log line
+        //} console.log(sum1); //<--- need to comment out this line so it does not print the sum to the console.log
         // checking the sum for ar1
-        
         
         var sum2 = 0; // to find average of ar1
             for (let i = 0; i < ar2.length; i++) {
-            sum2 += ar2[i];
-        } console.log(sum2);
+            sum2 += ar2[i]; } //<---- need to place the curly bracket here when I comment out the console.log line
+        //} console.log(sum2); //<--- need to comment out this line so it does not print the sum to the console.log
         // // checking the sum for ar2
     
-//} console.log(aveGreater(ar1, ar2));
+function checkTwoArr (sum1, sum2) {
+    if (sum1 > sum2) {
+        return "true";
+    } else {
+        return "false";
+    }
+} console.log(checkTwoArr(sum1, sum2));
+    // code passed on console.log
+    // to be on the safe side, I will run one more test w/ another set of array numbers
+
+    // used code below is to check the sum of an array: **used to help me solve question 11**
+        // to check the sum
+        // var num1 = [8, 3];
+        // var sum = 0;
+        //     for (let i = 0; i < num1.length; i++) {
+        //         sum += num1[i];
+        // } console.log(sum);
+        // total sum is 11, which this is correct
+        // commenting out as it is not part of the question. Just here for my reference.
 
 
-// used code line 312 - 317, to check the sum of an array
-    // to check the sum
-    // var num1 = [8, 3];
-    // var sum = 0;
-    //     for (let i = 0; i < num1.length; i++) {
-    //         sum += num1[i];
-    // } console.log(sum);
-    // total sum is 11, which this is correct
-    // commenting out as it is not part of the question. Just here for my reference.
+    // reference code from question 12's test #2: **used to help me solve question 11**
+    // var itsHotOutside1 = "True";
+    // var moneyInPocket1 = "30";
+    // function willBuyDrink1 (itsHotOutside1, moneyInPocket1) {
+    //     if(itsHotOutside1 && moneyInPocket1 > 10.50) {
+    //     return "true";
+    //     } else //if (itsHotOutside && moneyInPocket < 10.50) <---- didn't need to include this but for trial and error, I started with this line to see how my code work
+    //     {
+    //     return "false";
+    //     }
+    // } console.log(willBuyDrink1(itsHotOutside1, moneyInPocket1));
+    // // code works and printed true since moneyInPocket is 30 which is more than 10.50
 
-
-
-
-
-
-
-
+    // test #2 for question 11
+    var ar6 = [23, 9, 3, 64]; // variables from question 1
+    var ar7 = [23, 42, 15, 3, 33, 2]; // variables from my test for question 10
+        var sum10 = 0; // to find average of ar6
+            for (let i = 0; i < ar6.length; i++) {
+            sum10 += ar6[i];
+            (sum10 / ar6); } //<---- need to place the curly bracket here when I comment out the console.log line
+        //} console.log(sum10); <--- need to comment out this line so it does not print the sum to the console.log
+        // checking the sum for ar6
+        
+        var sum20 = 0; // to find average of ar7
+            for (let i = 0; i < ar7.length; i++) {
+            sum20 += ar7[i]; } //<---- need to place the curly bracket here when I comment out the console.log line
+        //} console.log(sum20); <--- need to comment out this line so it does not print the sum to the console.log
+        // // checking the sum for ar7
+    
+function checkTwoArr (sum10, sum20) {
+    if (sum10 > sum20) {
+        return "true";
+    } else {
+        return "false";
+    }
+} console.log(checkTwoArr(sum10, sum20));
+    // this is correct as ar6 should equal 99 which is NOT greater than ar7 which is 118
+    // test 2 passed
+    // therefore, this long code works
+    // will need to talk w/ Jolene to see how I could combine the sums w/in my code so that it does not print to the console.log
+        // nevermind I found the solution was to comment out my }console.log(sum20), etc for all (test and acutal code)
+        // will need to place curly bracket after the part sum20 += ar7[i];
 
 
 
@@ -434,8 +470,8 @@ function willBuyDrink (itsHotOutside, moneyInPocket) {
     return "false";
     }
 } console.log(willBuyDrink(itsHotOutside, moneyInPocket));
-// code works and correct answer is false
-// will test w/ a new number to see if code works
+    // code works and correct answer is false
+    // will test w/ a new number to see if code works
 
 //test code below:
 var itsHotOutside1 = "True";
@@ -449,7 +485,7 @@ function willBuyDrink1 (itsHotOutside1, moneyInPocket1) {
     return "false";
     }
 } console.log(willBuyDrink1(itsHotOutside1, moneyInPocket1));
-// code works and printed true since moneyInPocket is 30 which is more than 10.50
+    // code works and printed true since moneyInPocket is 30 which is more than 10.50
 
 
 // 13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
