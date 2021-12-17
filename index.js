@@ -426,8 +426,8 @@ function checkTwoArr (sum1, sum2) {
     // // code works and printed true since moneyInPocket is 30 which is more than 10.50
 
     // test #2 for question 11
-    var ar6 = [23, 9, 3, 64]; // variables from question 1
-    var ar7 = [23, 42, 15, 3, 33, 2]; // variables from my test for question 10
+var ar6 = [23, 9, 3, 64]; // variables from question 1
+var ar7 = [23, 42, 15, 3, 33, 2]; // variables from my test for question 10
         var sum10 = 0; // to find average of ar6
             for (let i = 0; i < ar6.length; i++) {
             sum10 += ar6[i];
@@ -452,7 +452,7 @@ function checkTwoArr (sum10, sum20) {
     // test 2 passed
     // therefore, this long code works
     // will need to talk w/ Jolene to see how I could combine the sums w/in my code so that it does not print to the console.log
-        // nevermind I found the solution was to comment out my }console.log(sum20), etc for all (test and acutal code)
+        // nevermind I found the solution. I need to comment out my }console.log(sum20), etc for all (test and acutal code)
         // will need to place curly bracket after the part sum20 += ar7[i];
 
 
