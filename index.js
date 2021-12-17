@@ -308,7 +308,7 @@ function returnSum (num) {
     
 
 
-    // used code line 312 - 317, to check a sum
+    // used code line 312 - 317, to check the sum of an array
     // to check the sum
     // var num1 = [8, 3];
     // var sum = 0;
@@ -318,3 +318,12 @@ function returnSum (num) {
     // total sum is 11, which this is correct
     // commenting out as it is not part of the question. Just here for my reference.
 
+
+// 10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
+
+// var arr [] = {23, 9, 3, 64, 2, 8, 28, 93}
+//     // using array of ages from question 1
+// count i = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     return count[i];
+// }
