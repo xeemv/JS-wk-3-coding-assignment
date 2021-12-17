@@ -44,7 +44,7 @@ function averageA(array1){
     // my code worked and it printed to console.log with a result of 28.75
     // to be on the safe side, I also used my phone's calculator to get the average
 
-    // test number 2 for section 1.c using the additional birthday variables
+    // test number 1 for section 1.c using the additional birthday variables
 var ages2 = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54];
 function average7(array){
     var sum9 = 0;
@@ -53,7 +53,7 @@ function average7(array){
     } return (sum9 / array.length);
 } 
 console.log(average7(ages2));
-    // test answer should be equal 40.1667
+    // end of test 1 answer should be equal 40.1667
     // console.log printed 40.1667, therefore, code line works
 
 
@@ -64,7 +64,7 @@ console.log(average7(ages2));
 // b.   Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
 
 
-    // line 69 is the array for question 2
+    // the array for question 2
 var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
     // 2. a === I will use a for loop to iterate through the array and calculate the average number of letter per name
 
@@ -78,7 +78,7 @@ var letters = 0
 }
 console.log(letters/names.length);
 
-        // ask Jolene about this code line 84 - 99 and the one in my onenote
+        // ask Jolene about this code line 81 - 99 and the one in my onenote
 
         // Will continue to work on code line 84 - 99 another time
         // var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
@@ -108,6 +108,8 @@ for (let i = 0; i < names.length; i++) {
     // tested this in console.log and names printed as "Sam Tommy Tim Sally Buck Bob"correctly
     //
 
+
+
 // 3.	How do you access the last element of any array?
     // My answer: To access the last element of an array, an individual will need to use the array method call [array.length - 1].
     // using question 1's age variables 
@@ -120,7 +122,7 @@ function last(array){
 console.log(last(ages));
     // tested this and it printed 93 on the console.log
 
-    // test 2
+    // start of test 1
 var ages = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54];
 
 function last(array){
@@ -128,10 +130,10 @@ function last(array){
     return anArray;
 };
 console.log(last(ages));
-    //
-    // test 2 completed
+    // end of test 1
+    // test 1 completed
     // code printed 54 to the console.log
-    //
+    
 
 
 // 4.	How do you access the first element of any array?
@@ -146,8 +148,10 @@ function first(array){
 console.log(first(ages));
     // this printed 3 to the console.log which is correct
 
-    // will do one more test
-    // test 2, I switched index 0 and 2 around
+
+
+    // will do one more to test the code
+    // start test 1, I switched index 0 and 2 around
 var ages = [23, 9, 3, 64, 2, 8, 28, 93];
 
 function first(array){
@@ -156,7 +160,7 @@ function first(array){
 };
 console.log(first(ages));
     // this printed 23 to the console which is correct
-    //
+    // end of test 1
     //
 
 
@@ -256,7 +260,8 @@ var n = (2)
     // also put square brackets around my word variable. Switched it to parentheses when trouble shooting my error/glitch from code line repeat.length = n + 1;
     //it would print 'hello' over x amount more than the number I listed for this variable
 
-    //code line 242 - 247, per my research this would be a good method to return the word variable so that the string has no space writing the code this way and using the join method
+    // code line 274 - 280, per my research, this would be a good method to return the word variable so that the string has no space 
+    // writing the code this way and using the join method
 function repeat(word, n){ 
     var repeat = [];
     repeat.length = n + 1;
@@ -264,17 +269,19 @@ function repeat(word, n){
 }
 console.log(repeat(word, n));
     // I tried using the join method but I must be writting my code wrong, may attempt to correct it at a later time.
-    //ignore failed attempt on line 251 - 257
+    // ignore failed attempt below
 
-        // function join (word, n) {
-        //     var join = [];
-        //     join.length = n + 1;
-        //     return word.join(word); 
-        // }
-        // console.log(join(word, n));
-        //console.log(word.join(''));
-    // tested this code by switching the var n to different numbers
+            // function join (word, n) {
+            //     var join = [];
+            //     join.length = n + 1;
+            //     return word.join(word); 
+            // }
+            // console.log(join(word, n));
+            //console.log(word.join(''));
+
     // code works and printed as instructed in the directions
+    // tested this code by switching the var n to different numbers
+    
 
     
 // 8.	Write a function that takes two parameters, firstName and lastName, and returns a full name (the full name should be the first and the last name separated by a space).
@@ -283,9 +290,9 @@ var firstName = ('Sally');
 var lastName = ('Tea');
 
 function fullN (firstName, lastName) {
-    return (firstName + " " + lastName);
+    return (firstName + " " + lastName); // <---- found my solution => must not forget the parentheses in order to create the space between firstName and lastName
     // return firstName + " " + lastName; --> attempted this, no go as it still prints SallyTea
-    // found my solution => must not forget the parentheses in order to create the space between firstName and lastName
+    
 }
     fullN ();
     console.log(fullN(firstName, lastName));
@@ -310,26 +317,29 @@ function fullN (firstName, lastName) {
     // } 
     // console.log(average(ages));
 
-var num = [23, 9, 3, 64, 2, 8, 28, 93];
+    // also referenced my codes from questions 11 and 12 to help with this code line:
+var num99 = [23, 9, 3, 64, 2, 8, 28, 93];
     // using array of ages from question 1
 
-function returnSum (num) {
-    var sum = 0;
-    for (let i = 0; i < num.length; i++) {
-        sum += num[i];
-        console.log("this is my current total " + sum);
-    if (sum > 100); {
-        return "true";
-        }
-    }
- } console.log(returnSum(num));
+    var sum99 = 0;
+    for (let i = 0; i < num99.length; i++) {
+        sum99 += num99[i];} //<---- need to place the curly bracket here when I comment out the console.log line
+        //console.log("this is my current total " + sum99);
 
+function returnSum (num99) {
+    if (sum99 > 100) { // also found that one of my errors was due to having a semicolon after the parentheses.
+        //if (sum99 > 100); { <--- originally had it written like this. smh
+        return "true";
+        } else {
+            return "false";
+        }
+    } console.log(returnSum(num99));
     // code passed and printed as true in console.log
     // calculated on cell phone calculator and the total sum is 230 which is greater than 100
+    // I will make a test to see if this is working properly
     
 
-
-    // used code line 312 - 317, to check the sum of an array
+    // used code line belwo is to check the sum of an array:
     // to check the sum
     // var num1 = [8, 3];
     // var sum = 0;
@@ -338,6 +348,26 @@ function returnSum (num) {
     // } console.log(sum);
     // total sum is 11, which this is correct
     // commenting out as it is not part of the question. Just here for my reference.
+
+    //test 1
+    var num98 = [23, 9, 3, 64,]; // 2, 8, 28, 93 were removed
+    // using array of ages from question 1
+
+    var sum98 = 0;
+    for (let i = 0; i < num98.length; i++) {
+        sum98 += num98[i];} //<---- need to place the curly bracket here when I comment out the console.log line
+        //console.log("this is my current total " + sum98);
+
+function returnSum1 (num98) {
+    if (sum98 > 100) {
+        return "true";
+        } else {
+            return "false";
+        }
+    } console.log(returnSum1(num98));
+    // end of test 1, this code passed
+    // the sum is 99 which is less than 100...so the code is working properly    
+
 
 
 // 10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
@@ -359,7 +389,7 @@ function average(arr2, num3) {
         // I think I ended up trying to have sum incremented by num3 which is the length of my array and that was why it was giving me an error??? If I'm understanding this correctly.
     // tested the code and console.log printed 28.75, arr2 is equal to 230 / 8 is 28.75
 
-    // test 2 starting at line 342
+    // test 1 below of question 10's code
     var arr3 = [23, 42, 15, 3, 33, 2]; // sum of these numbers should be 118
     var num4 = (arr3.length);
 
@@ -372,6 +402,7 @@ function average(arr2, num3) {
     // test printed 19.668 to the console.log
     // 118/6 is 19.667
     // code is dynamic
+    // end of test 1
 
 
 // 11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
@@ -412,7 +443,7 @@ function checkTwoArr (sum1, sum2) {
         // commenting out as it is not part of the question. Just here for my reference.
 
 
-    // reference code from question 12's test #2: **used to help me solve question 11**
+    // reference code from question 12's test 1: **used to help me solve question 11**
     // var itsHotOutside1 = "True";
     // var moneyInPocket1 = "30";
     // function willBuyDrink1 (itsHotOutside1, moneyInPocket1) {
@@ -425,7 +456,7 @@ function checkTwoArr (sum1, sum2) {
     // } console.log(willBuyDrink1(itsHotOutside1, moneyInPocket1));
     // // code works and printed true since moneyInPocket is 30 which is more than 10.50
 
-    // test #2 for question 11
+    // test 1 for question 11
 var ar6 = [23, 9, 3, 64]; // variables from question 1
 var ar7 = [23, 42, 15, 3, 33, 2]; // variables from my test for question 10
         var sum10 = 0; // to find average of ar6
@@ -448,11 +479,12 @@ function checkTwoArr (sum10, sum20) {
         return "false";
     }
 } console.log(checkTwoArr(sum10, sum20));
+    // end of test 1
+    // test 1 passed
     // this is correct as ar6 should equal 99 which is NOT greater than ar7 which is 118
-    // test 2 passed
     // therefore, this long code works
     // will need to talk w/ Jolene to see how I could combine the sums w/in my code so that it does not print to the console.log
-        // nevermind I found the solution. I need to comment out my }console.log(sum20), etc for all (test and acutal code)
+        // nevermind I found the solution. I need to comment out my }console.log(sum20, etc) for all (test and acutal code)
         // will need to place curly bracket after the part sum20 += ar7[i];
 
 
@@ -465,7 +497,7 @@ var moneyInPocket = "5";
 function willBuyDrink (itsHotOutside, moneyInPocket) {
     if(itsHotOutside && moneyInPocket > 10.50) {
     return "true";
-    } else //if (itsHotOutside && moneyInPocket < 10.50) <---- didn't need to include this but for trial and error, I started with this line to see how my code work
+    } else // if (itsHotOutside && moneyInPocket < 10.50) <---- didn't need to include this but for trial and error, I started with this line to see how my code work. Now commented out.
     {
     return "false";
     }
@@ -473,7 +505,7 @@ function willBuyDrink (itsHotOutside, moneyInPocket) {
     // code works and correct answer is false
     // will test w/ a new number to see if code works
 
-//test code below:
+//test 1 below:
 var itsHotOutside1 = "True";
 var moneyInPocket1 = "30";
 
@@ -485,7 +517,9 @@ function willBuyDrink1 (itsHotOutside1, moneyInPocket1) {
     return "false";
     }
 } console.log(willBuyDrink1(itsHotOutside1, moneyInPocket1));
+    // end of test 1
     // code works and printed true since moneyInPocket is 30 which is more than 10.50
+
 
 
 // 13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
