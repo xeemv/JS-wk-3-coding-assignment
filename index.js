@@ -190,7 +190,7 @@ console.log(first(ages));
         // }
         // console.log(letters/names.length);
 
-
+    // Maybe I need to use the .length method??? 
 
 
 
@@ -321,9 +321,19 @@ function returnSum (num) {
 
 // 10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
 
-// var arr [] = {23, 9, 3, 64, 2, 8, 28, 93}
-//     // using array of ages from question 1
-// count i = 0;
-// for (let i = 0; i < arr.length; i++) {
-//     return count[i];
-// }
+var arr2 = [23, 9, 3, 64, 2, 8, 28, 93]; //[10, 2, 3, 4, 5, 6, 7, 8, 9]; 
+    // using array of ages from question 1
+var num3 = (arr2.length);
+
+function average(arr2, num3) {
+    var sum = 0;
+        for (let i = 0; i < num3; i++) {
+            sum += arr2[i]; // sum is incremented by i here and needs the arr2 not the length of the arr2 via num3
+    } return (sum / num3); // here I'm dividing the sum (sum += arr2) by the num3 which is the length??
+} console.log(average(arr2, num3));
+
+    // per research, I should use the average code I have and set it up from above to help as this is similar and I would not need to recreate a new code aka cause more errors for myself
+    // need two variable
+    // return is NaN so I need to fix this
+        //sum += num3[i]; ==> this was the reason why my code was returning as NaN
+        // I think I ended up trying to have sum incremented by num3 which is the length of my array and that was why it was giving me an error??? If I'm understanding this correctly.
