@@ -26,9 +26,9 @@ function firstLast(array){
 console.log(firstLast([3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54]))
     // when testing this, it printed 51 on the console.
     // there for this is a dynamic == basically checking to see if this will work when more values are added to the array
-console.log(firstLast(ages)); 
-    // I could also use this consol.log instead of line 26
-    // test printed the same results
+    // console.log(firstLast(ages)); 
+        // I could also use the line above instead of line 26
+        // test printed the same results
 
 
 // section 1.c.
@@ -44,15 +44,16 @@ function averageA(array1){
     // my code worked and it printed to console.log with a result of 28.75
     // to be on the safe side, I also used my phone's calculator to get the average
 
-    // test number 1 for section 1.c using the additional birthday variables
-var ages2 = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54];
-function average7(array){
-    var sum9 = 0;
-    for (let i = 0; i < array.length; i++) {
-    sum9 += array[i];
-    } return (sum9 / array.length);
-} 
-console.log(average7(ages2));
+
+    // test 1 for section 1.c using the additional birthday variables
+    // var ages2 = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54];
+    // function average7(array){
+    //     var sum9 = 0;
+    //     for (let i = 0; i < array.length; i++) {
+    //     sum9 += array[i];
+    //     } return (sum9 / array.length);
+    // } 
+    // console.log(average7(ages2));
     // end of test 1 answer should be equal 40.1667
     // console.log printed 40.1667, therefore, code line works
 
@@ -121,13 +122,13 @@ console.log(last(ages));
     // tested this and it printed 93 on the console.log
 
     // start of test 1
-var ages = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54];
+    // var ages = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54];
 
-function last(array){
-    let anArray = (array[array.length - 1])
-    return anArray;
-};
-console.log(last(ages));
+    // function last(array){
+    //     let anArray = (array[array.length - 1])
+    //     return anArray;
+    // };
+    // console.log(last(ages));
     // end of test 1
     // test 1 completed
     // code printed 54 to the console.log
@@ -150,13 +151,13 @@ console.log(first(ages));
 
     // will do one more to test the code
     // start test 1, I switched index 0 and 2 around
-var ages = [23, 9, 3, 64, 2, 8, 28, 93];
+    // var ages = [23, 9, 3, 64, 2, 8, 28, 93];
 
-function first(array){
-    let anArray = (array[0])
-    return anArray;
-};
-console.log(first(ages));
+    // function first(array){
+    //     let anArray = (array[0])
+    //     return anArray;
+    // };
+    // console.log(first(ages));
     // this printed 23 to the console which is correct
     // end of test 1
     //
@@ -168,12 +169,13 @@ console.log(first(ages));
 // namesArray = ["Kelly", "Sam", "Kate"] //given this array
 // nameLengths = [5, 3, 4] //create this new array
 
-        var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
-        var namesLengths = [];
+var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
+var namesLengths = [];
 
-        names.forEach(name=>namesLengths.splice(namesLengths.length,0,name.length))
-        console.log(namesLengths); 
+names.forEach(name=>namesLengths.splice(namesLengths.length,0,name.length))
+console.log(namesLengths); 
         // will need to practice more forEach
+
 
 
 //6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
@@ -189,6 +191,7 @@ for (let i = 0; i < namesLengths22.length; i++) {
 
 
 // 7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
+
 var word = ('hello')
 var n = (2) 
     //var n = [2] --> originally had the var n written incorrectly as an array thus my code would print out of whack in the console
@@ -226,11 +229,10 @@ var lastName = ('Tea');
 
 function fullN (firstName, lastName) {
     return (firstName + " " + lastName); // <---- found my solution => must not forget the parentheses in order to create the space between firstName and lastName
-    // return firstName + " " + lastName; --> attempted this, no go as it still prints SallyTea
-    
+    // return firstName + " " + lastName; --> attempted this, no go as it still prints SallyTea  
 }
     fullN ();
-    console.log(fullN(firstName, lastName));
+console.log(fullN(firstName, lastName));
     // code does work, but I need to figure out how to print w/ a space between the first and last name
     // currently printing SallyTea as one word 
     // console.log(fullN(firstName, "", lastName)); --> attempted this on my console.log however, lastName ends up dropping off  
@@ -285,21 +287,21 @@ function returnSum (num99) {
     // commenting out as it is not part of the question. Just here for my reference.
 
     //test 1
-    var num98 = [23, 9, 3, 64,]; // 2, 8, 28, 93 were removed
+    // var num98 = [23, 9, 3, 64,]; // 2, 8, 28, 93 were removed
     // using array of ages from question 1
 
-    var sum98 = 0;
-    for (let i = 0; i < num98.length; i++) {
-        sum98 += num98[i];} //<---- need to place the curly bracket here when I comment out the console.log line
+    // var sum98 = 0;
+    // for (let i = 0; i < num98.length; i++) {
+    //     sum98 += num98[i];} //<---- need to place the curly bracket here when I comment out the console.log line
         //console.log("this is my current total " + sum98);
 
-function returnSum1 (num98) {
-    if (sum98 > 100) {
-        return "true";
-        } else {
-            return "false";
-        }
-    } console.log(returnSum1(num98));
+    // function returnSum1 (num98) {
+    //     if (sum98 > 100) {
+    //         return "true";
+    //         } else {
+    //             return "false";
+    //         }
+    //     } console.log(returnSum1(num98));
     // end of test 1, this code passed
     // the sum is 99 which is less than 100...so the code is working properly    
 
@@ -324,16 +326,15 @@ function average(arr2, num3) {
         // I think I ended up trying to have sum incremented by num3 which is the length of my array and that was why it was giving me an error??? If I'm understanding this correctly.
     // tested the code and console.log printed 28.75, arr2 is equal to 230 / 8 is 28.75
 
-    // test 1 below of question 10's code
-    var arr3 = [23, 42, 15, 3, 33, 2]; // sum of these numbers should be 118
-    var num4 = (arr3.length);
-
-    function average(arr3, num4) {
-    var sum = 0;
-        for (let i = 0; i < num4; i++) {
-            sum += arr3[i];
-        } return (sum / num4);
-    } console.log(average(arr3, num4));
+    // // test 1 below of question 10's code
+    // var arr3 = [23, 42, 15, 3, 33, 2]; // sum of these numbers should be 118
+    // var num4 = (arr3.length);
+    // function average(arr3, num4) {
+    // var sum = 0;
+    //     for (let i = 0; i < num4; i++) {
+    //         sum += arr3[i];
+    //     } return (sum / num4);
+    // } console.log(average(arr3, num4));
     // test printed 19.668 to the console.log
     // 118/6 is 19.667
     // code is dynamic
@@ -392,28 +393,28 @@ function checkTwoArr (sum1, sum2) {
     // // code works and printed true since moneyInPocket is 30 which is more than 10.50
 
     // test 1 for question 11
-var ar6 = [23, 9, 3, 64]; // variables from question 1
-var ar7 = [23, 42, 15, 3, 33, 2]; // variables from my test for question 10
-        var sum10 = 0; // to find average of ar6
-            for (let i = 0; i < ar6.length; i++) {
-            sum10 += ar6[i];
-            (sum10 / ar6); } //<---- need to place the curly bracket here when I comment out the console.log line
+// var ar6 = [23, 9, 3, 64]; // variables from question 1
+// var ar7 = [23, 42, 15, 3, 33, 2]; // variables from my test for question 10
+//         var sum10 = 0; // to find average of ar6
+//             for (let i = 0; i < ar6.length; i++) {
+//             sum10 += ar6[i];
+//             (sum10 / ar6); } //<---- need to place the curly bracket here when I comment out the console.log line
         //} console.log(sum10); <--- need to comment out this line so it does not print the sum to the console.log
         // checking the sum for ar6
         
-        var sum20 = 0; // to find average of ar7
-            for (let i = 0; i < ar7.length; i++) {
-            sum20 += ar7[i]; } //<---- need to place the curly bracket here when I comment out the console.log line
+        // var sum20 = 0; // to find average of ar7
+        //     for (let i = 0; i < ar7.length; i++) {
+        //     sum20 += ar7[i]; } //<---- need to place the curly bracket here when I comment out the console.log line
         //} console.log(sum20); <--- need to comment out this line so it does not print the sum to the console.log
         // // checking the sum for ar7
     
-function checkTwoArr (sum10, sum20) {
-    if (sum10 > sum20) {
-        return "true";
-    } else {
-        return "false";
-    }
-} console.log(checkTwoArr(sum10, sum20));
+// function checkTwoArr (sum10, sum20) {
+//     if (sum10 > sum20) {
+//         return "true";
+//     } else {
+//         return "false";
+//     }
+// } console.log(checkTwoArr(sum10, sum20));
     // end of test 1
     // test 1 passed
     // this is correct as ar6 should equal 99 which is NOT greater than ar7 which is 118
@@ -440,21 +441,51 @@ function willBuyDrink (itsHotOutside, moneyInPocket) {
     // code works and correct answer is false
     // will test w/ a new number to see if code works
 
-//test 1 below:
-var itsHotOutside1 = "True";
-var moneyInPocket1 = "30";
+    //test 1 below:
+    // var itsHotOutside1 = "True";
+    // var moneyInPocket1 = "30";
 
-function willBuyDrink1 (itsHotOutside1, moneyInPocket1) {
-    if(itsHotOutside1 && moneyInPocket1 > 10.50) {
-    return "true";
-    } else //if (itsHotOutside && moneyInPocket < 10.50) <---- didn't need to include this but for trial and error, I started with this line to see how my code work
-    {
-    return "false";
-    }
-} console.log(willBuyDrink1(itsHotOutside1, moneyInPocket1));
-    // end of test 1
-    // code works and printed true since moneyInPocket is 30 which is more than 10.50
+    // function willBuyDrink1 (itsHotOutside1, moneyInPocket1) {
+    //     if(itsHotOutside1 && moneyInPocket1 > 10.50) {
+    //     return "true";
+    //     } else //if (itsHotOutside && moneyInPocket < 10.50) <---- didn't need to include this but for trial and error, I started with this line to see how my code work
+    //     {
+    //     return "false";
+    //     }
+    // } console.log(willBuyDrink1(itsHotOutside1, moneyInPocket1));
+    //     // end of test 1
+    //     // code works and printed true since moneyInPocket is 30 which is more than 10.50
 
 
 
 // 13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+
+    // I'm joining a study group to help gain better knowledge of javascript.
+    // Function below is to determine if I would attend the study group depending on the time of day.
+    // time will be based on three time of the day, morning, evening, and night.
+    // Since I work from 800AM until 500PM, if the time is equal to evening, I will be prompted by the return function to go today.
+    // if the time is equal to morning, I will be prompted by the retun to study at home during lunch break.
+    // if the time is equal to night, I will be prompted by the retun to go to bed and reschedule study group.
+
+var study = "true";
+var time = "evening";
+
+function joinStudyGroup(study, time) {
+    if (study && time == "evening") {
+    return "Go today!!";
+    } else if (study && time == "night") 
+    {
+    return "Go to bed and reschedule study group.";
+    } else if (study && time == "morning") 
+    {
+    return "Study during lunch break.";
+    }
+} console.log(joinStudyGroup(study, time));
+
+var study = "true";
+var time = "night";
+console.log(joinStudyGroup(study, time));
+
+var study = "true";
+var time = "morning";
+console.log(joinStudyGroup(study, time));
