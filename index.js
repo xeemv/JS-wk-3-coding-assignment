@@ -66,7 +66,7 @@ console.log(average7(ages2));
 
     // the array for question 2
 var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
-    // 2. a === I will use a for loop to iterate through the array and calculate the average number of letter per name
+// section a :: I will use a for loop to iterate through the array and calculate the average number of letter per name
 
     // function averageNames(arr){
 var letters = 0
@@ -78,24 +78,15 @@ var letters = 0
 }
 console.log(letters/names.length);
 
-        // ask Jolene about this code line 81 - 99 and the one in my onenote
-
-        // Will continue to work on code line 84 - 99 another time
-        // var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
-        //     var chars = names.split[""]; 
-        //     // per my research, it would be best to convert these strings into characters in the names
-        //     // to work w/ each character individually by creating this variable chars
-        //      var lettersCount = []; 
-        //     // this is to count keep count of the letters
-        //     // this is an associative array
-        // for (let i = 0; i < chars.length; i++) {
-        //     if (type of (lettersCount[chars[i]] !== undefined))
-        //     lettersCount[chars[i]] = 0;
-        //     lettersCount[chars[i]]++;
-        //     }
-        //     for (var i in lettersCount) {
-        //     } console.log(lettersCount[i]);
-        //     // console.log(averageNames(names));
+    // a different way to solve the answer
+    // var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
+    // var namesLength = [];
+    // var letters = 0;
+    //             // var sum = 0;
+    // for (let i = 0; i <= names.length -1; i++) {
+    // letters = letters + names[i].length;     
+    // } console.log(letters/names.length);
+       
 
 // 2. b.
 var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
@@ -108,6 +99,13 @@ for (let i = 0; i < names.length; i++) {
     // tested this in console.log and names printed as "Sam Tommy Tim Sally Buck Bob"correctly
     //
 
+    
+    // This code is another method to printing the names in 2.b
+    // var nameLengths1 = " ";
+    // for (let i = 0; i < names.length - 1; i++) 
+    // nameLengths1 += names[i] + " ";
+    // nameLengths1 += names[names.length - 1];
+    // console.log(nameLengths1);
 
 
 // 3.	How do you access the last element of any array?
@@ -170,82 +168,86 @@ console.log(first(ages));
 // namesArray = ["Kelly", "Sam", "Kate"] //given this array
 // nameLengths = [5, 3, 4] //create this new array
 
-        // code line 170 - 178 is here as a reference to question 2.a
-        // string [] namesArry = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
-        
-        // int [] nameLengths= Arrays.stream(namesArry)
-        //     .mapToInt(String::nameLengths)
-        //     .toArray();
-        //     .println(Arrays.toString(nameLengths));
-        // var letters = 0
-        // var nameLengths= Arrays.stream(namesArry)
-
-        //     .mapToInt(namesArry::nameLengths)
-        //     .toArray();
-        // } console.log(Arrays.namesArry(nameLengths));   
-    
         var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
+        var namesLengths = [];
 
-        // int[] nameLengths = new int[names.length];
-		// for (int i = 0; i < names.length; i++) {
-		// 	nameLengths[i] = names[i].length(); 
-		// }
-
-
-        // function newNamesArray (namesLengths, namesArray) {
-        //     var sumNames = 0;
-        // for (let i = 0; i < namesArry.length; i++) {
-        //      sumNames = sumNames + namesLengths[i];
-        // } 
-        // console.log(newNamesArray[nameLengths,namesArry]);
-        // }
-
-        // failed attempts
-        // var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
-        // // function averageNames(arr){
-        // var letters = 0
-        //     // var sum = 0;
-        //     for (let i = 0; i < names.length; i++) {
-        //         letters = letters + names[i].length;
-        //     // sum += arr[i];
-        //     // } return sum / names.length;
-        // }
-        // console.log(letters/names.length);
-
-    // Maybe I need to use the .length method??? 
+        names.forEach(name=>namesLengths.splice(namesLengths.length,0,name.length))
+        console.log(namesLengths); 
+        // will need to practice more forEach
 
 
+//6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
+
+// var sum = 0;
+
+// for (let i = 0; i < namesLengths.length; i++) {
+//     sum += namesLengths;
+
+// }
+
+let namesLengths22 = [3, 5, 3, 5, 4, 3]; // should equal 23
+//can't hear you now. lol
 
 
-        // failed attempts
-        // var letters = 0
-        // var i, j;
-        //     // var sum = 0;
-        //     for (let i = 0; i < names.length; i++) {
-        //         letters = letters + names[i].length;
-            
-        //         //function nameLengths(array) {
-        //             for (let j = 0; j < names[i].length; j++) {
-        //             nameLengths = nameLengths + letters + names[i].length;
-        //             //return nameLengths;
-        //         }
-        //     //}
-        //     // sum += arr[i];
-        //     // } return sum / names.length;
-        // } console.log(names[i][j]);
+// //var num44 = [8,3];
+//     var sum44 = 0;
+//         while(namesLengths22 < 50); {
+//             sum44 += namesLengths22;
+//             namesLength = namesLength + 1;
+//     } console.log(sum44);
+
+// names.forEach ((num1, index) => {
+//   const num2 = namesLengths[index]; 
+//   console.log(num1, num2); 
+// });
+
+
+
+ // used code line below is to check the sum of an array: I made this the other day. lol
+    // to check the sum
+    // var num44 = [8, 3];
+    // var sum44 = 0;
+    //     for (let i = 0; i < nameslengths; i++) {
+    //         sum44 += num44[i];
+    // } console.log(sum44);
+    // total sum is 11, which this is correct
+    // commenting out as it is not part of the question. Just here for my reference.
 
 
 
 
+// ages1
+
+// names.forEach((num1,index)=>{
+//     var num2 = namesLengths[index]
+//     console.log(num1,num2)
+// })
 
 
 
 
-        // for (let i = 0; i < names.length; i++) {
-        //         nameLengths[i] = nameLengths + names[i].length();
-        // } 
 
-        // console.log(array.toString(nameLengths));
+
+// for (let i = 0; i < namesLengths[i]; i++) { 
+//     ages1 += namesLengths[i];
+// } console.log(namesLengths);
+
+
+
+
+
+
+
+
+
+// var ages1 = [3, 9, 23, 64, 2, 8, 28, 93];
+// function averageA(array1){
+//     var sum6 = 0;
+//     for (let i = 0; i < array1.length; i++) {
+//     sum6 += array1[i];
+//     } return (sum6 / array1.length);
+// } console.log(averageA(ages1));
+
 
 
 
@@ -339,7 +341,7 @@ function returnSum (num99) {
     // I will make a test to see if this is working properly
     
 
-    // used code line belwo is to check the sum of an array:
+    // used code line below is to check the sum of an array:
     // to check the sum
     // var num1 = [8, 3];
     // var sum = 0;
