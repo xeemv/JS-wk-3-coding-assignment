@@ -198,14 +198,14 @@ var n = (2)
     // also put square brackets around my word variable. Switched it to parentheses when trouble shooting my error/glitch from code line repeat.length = n + 1;
     //it would print 'hello' over x amount more than the number I listed for this variable
 
-    // code line 274 - 280, per my research, this would be a good method to return the word variable so that the string has no space 
-    // writing the code this way and using the join method
 function repeat(word, n){ 
     var repeat = [];
     repeat.length = n + 1;
     return repeat.join(word);
 }
 console.log(repeat(word, n));
+    // code line 274 - 280, per my research, this would be a good method to return the word variable so that the string has no space 
+    // writing the code this way and using the join method
     // I tried using the join method but I must be writting my code wrong, may attempt to correct it at a later time.
     // ignore failed attempt below
 
@@ -460,12 +460,12 @@ function willBuyDrink (itsHotOutside, moneyInPocket) {
 
 // 13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
 
-    // I'm joining a study group to help gain better knowledge of javascript.
-    // Function below is to determine if I would attend the study group depending on the time of day.
-    // time will be based on three time of the day, morning, evening, and night.
-    // Since I work from 800AM until 500PM, if the time is equal to evening, I will be prompted by the return function to go today.
-    // if the time is equal to morning, I will be prompted by the retun to study at home during lunch break.
-    // if the time is equal to night, I will be prompted by the retun to go to bed and reschedule study group.
+    // I'm joining a study group to gain better knowledge of javascript.
+    // My function below is to determine if I would attend the study group depending on the time of day.
+        // time will be based on three time of the day, morning, evening, and night.
+        // Since I work from 800AM until 500PM, if the time is equal to evening, I will be prompted by the return function to go today.
+        // if the time is equal to morning, I will be prompted by the retun to study at home during lunch break.
+        // if the time is equal to night, I will be prompted by the retun to go to bed and reschedule study group.
 
 var study = "true";
 var time = "evening";
