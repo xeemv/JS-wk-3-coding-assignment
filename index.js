@@ -263,7 +263,7 @@ var num99 = [23, 9, 3, 64, 2, 8, 28, 93];
         sum99 += num99[i];} //<---- need to place the curly bracket here when I comment out the console.log line
         //console.log("this is my current total " + sum99);
 
-function returnSum (num99) {
+function returnSum (_num99) {
     if (sum99 > 100) { // also found that one of my errors was due to having a semicolon after the parentheses.
         //if (sum99 > 100); { <--- originally had it written like this. smh
         return "true";
