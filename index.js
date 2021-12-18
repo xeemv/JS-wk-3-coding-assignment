@@ -489,3 +489,6 @@ console.log(joinStudyGroup(study, time));
 var study = "true";
 var time = "morning";
 console.log(joinStudyGroup(study, time));
+
+
+      
