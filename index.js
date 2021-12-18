@@ -178,81 +178,14 @@ console.log(first(ages));
 
 //6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
 
-// var sum = 0;
-
-// for (let i = 0; i < namesLengths.length; i++) {
-//     sum += namesLengths;
-
-// }
 
 let namesLengths22 = [3, 5, 3, 5, 4, 3]; // should equal 23
-//can't hear you now. lol
+let sum44 = 0;
 
-
-// //var num44 = [8,3];
-//     var sum44 = 0;
-//         while(namesLengths22 < 50); {
-//             sum44 += namesLengths22;
-//             namesLength = namesLength + 1;
-//     } console.log(sum44);
-
-// names.forEach ((num1, index) => {
-//   const num2 = namesLengths[index]; 
-//   console.log(num1, num2); 
-// });
-
-
-
- // used code line below is to check the sum of an array: I made this the other day. lol
-    // to check the sum
-    // var num44 = [8, 3];
-    // var sum44 = 0;
-    //     for (let i = 0; i < nameslengths; i++) {
-    //         sum44 += num44[i];
-    // } console.log(sum44);
-    // total sum is 11, which this is correct
-    // commenting out as it is not part of the question. Just here for my reference.
-
-
-
-
-// ages1
-
-// names.forEach((num1,index)=>{
-//     var num2 = namesLengths[index]
-//     console.log(num1,num2)
-// })
-
-
-
-
-
-
-// for (let i = 0; i < namesLengths[i]; i++) { 
-//     ages1 += namesLengths[i];
-// } console.log(namesLengths);
-
-
-
-
-
-
-
-
-
-// var ages1 = [3, 9, 23, 64, 2, 8, 28, 93];
-// function averageA(array1){
-//     var sum6 = 0;
-//     for (let i = 0; i < array1.length; i++) {
-//     sum6 += array1[i];
-//     } return (sum6 / array1.length);
-// } console.log(averageA(ages1));
-
-
-
-
-
-
+for (let i = 0; i < namesLengths22.length; i++) {
+    sum44 += namesLengths22[i];
+} console.log(sum44);
+    // this one was finished last out of all the questions as I needed help with question five to complete this one.
 
 
 // 7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
