@@ -200,6 +200,11 @@ console.log(namesLengths);
         // will need to practice more forEach
 
 
+     /* another sample solution to reference in the future:
+     namesLengths = [3, 5, 3, 5, 4, 3]; 
+     names.forEach ((num1, index) => { const num2 = namesLengths[index]; console.log(num1, num2); });
+     */     
+
 
 //6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
 
