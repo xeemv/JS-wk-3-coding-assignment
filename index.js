@@ -527,7 +527,6 @@ function willBuyDrink (itsHotOutside, moneyInPocket) {
         - if the time is equal to morning, I will be prompted by the retun to study at home during lunch break.
         - if the time is equal to night, I will be prompted by the retun to go to bed and reschedule study group.
          */
-
 var study = "true";
 var time = "evening";
 
