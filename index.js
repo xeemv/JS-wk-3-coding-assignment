@@ -16,7 +16,6 @@ var ages = [3, 9, 23, 64, 2, 8, 28, 93]; //array for ages
     console.log(firstLast([3, 9, 23, 64, 2, 8, 28, 93]))
     // when testing this, it printed 90 on the console
 
-
 // section 1.b.
 var ages = [3, 9, 23, 64, 2, 8, 28, 93, 100, 25, 73, 54]; 
     // added 4 new values to the original list: 100, 25, 73, 54
@@ -483,15 +482,15 @@ function checkTwoArr (sum1, sum2) {
 
 //     12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 
-var itsHotOutside = "True";
-var moneyInPocket = "5";
+var itsHotOutside = true;
+var moneyInPocket = 5;
 
 function willBuyDrink (itsHotOutside, moneyInPocket) {
-    if(itsHotOutside && moneyInPocket > 10.50) {
-    return "true";
-    } else // if (itsHotOutside && moneyInPocket < 10.50) <---- didn't need to include this but for trial and error, I started with this line to see how my code work. Now commented out.
-    {
-    return "false";
+    if (itsHotOutside && moneyInPocket > 10.5) {
+      return true;
+    } // if (itsHotOutside && moneyInPocket < 10.50) <---- didn't need to include this but for trial and error, I started with this line to see how my code work. Now commented out.
+    else {
+      return false;
     }
 } console.log(willBuyDrink(itsHotOutside, moneyInPocket));
      /*
@@ -527,7 +526,7 @@ function willBuyDrink (itsHotOutside, moneyInPocket) {
         - if the time is equal to morning, I will be prompted by the retun to study at home during lunch break.
         - if the time is equal to night, I will be prompted by the retun to go to bed and reschedule study group.
          */
-var study = "true";
+var study = true;
 var time = "evening";
 
 function joinStudyGroup(study, time) {
@@ -542,11 +541,11 @@ function joinStudyGroup(study, time) {
     }
 } console.log(joinStudyGroup(study, time));
 
-var study = "true";
+var study = true;
 var time = "night";
 console.log(joinStudyGroup(study, time));
 
-var study = "true";
+var study = true;
 var time = "morning";
 console.log(joinStudyGroup(study, time));
 
